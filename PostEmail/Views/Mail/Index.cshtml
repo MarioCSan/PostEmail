@@ -1,0 +1,16 @@
+﻿<h2>Envio de email con Net Core</h2>
+<h4>@ViewData["MENSAJE"]</h4>
+<form method="post" class="form">
+    <label>Proveedor de email</label>
+    <select name="proveedorEmail"  class="form-control" >
+        <option value="gmail">Gmail</option>
+        <option value="outlook">Outlook</option>
+    </select>
+    <label>Dirección a la que quiere enviar el mensaje</label>
+    <input type="email" name="direccionEnvio"  class="form-control" />
+    <label>Asunto</label>
+    <input type="text" name="asunto"  class="form-control" />
+    <label>Mensaje</label>
+    <textarea name="mensaje" class="form-control"></textarea>
+    <button class="btn btn-outline-success"type="submit">Enviar</button>
+</form>
